@@ -1,0 +1,119 @@
+/* Start Variabels */
+:root{
+    --background-color-colum-1:hsl(31, 77%, 52%);
+    --background-color-colum-2:hsl(184, 100%, 22%);
+    --background-color-colum-3:hsl(179, 100%, 13%);
+    --color-main: white;
+}
+/* End varibales */
+/* Start Main Global Browser */
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+/* End Main Global Browser */
+/* Start container & Box */
+.template .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.template .container .box{
+    width: 900px;
+    height: 480px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+/* End container & Box */
+/* Start colum */
+.template .container .box .colum{
+    padding: 45px;
+}
+.template .container .box .colum:first-child{
+    background-color: var(--background-color-colum-1) ;
+    border-radius:5px 0 0 5px;
+}
+.template .container .box .colum:nth-child(2){
+    background-color: var(--background-color-colum-2) ;
+}
+.template .container .box .colum:last-child{
+    background-color: var(--background-color-colum-3) ;
+    border-radius: 0 5px 5px 0;
+}
+/* End colum */
+/* Start h1 */
+.template .container .box .colum h1{
+    color: var(--color-main);
+    font-family: 'Big Shoulders Display', cursive;
+}
+/* End h1 */
+/* Start paragraph */
+.template .container .box .colum p{
+    color: var(--color-main);
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', sans-serif
+}
+/* End paragraph */
+/* Start Input Subimt */
+.template .container .box .colum input{
+    border: none;
+    border-radius: 20px;
+    width: 145px;
+    padding: 12px;
+    margin-top: 50px;
+}
+.input-1{
+    color:var(--background-color-colum-1) ;
+}
+.input-2{
+    color:var(--background-color-colum-2) ;
+}
+.input-3{
+    color:var(--background-color-colum-3);
+}
+.template .container .box .colum .input-1:hover{
+    background-color: var(--background-color-colum-1) ;
+    color: rgb(247, 238, 238);
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}
+.template .container .box .colum .input-2:hover{
+    background-color: var(--background-color-colum-2) ;
+    color: rgb(247, 238, 238);
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}
+.template .container .box .colum .input-3:hover{
+    background-color: var(--background-color-colum-3);
+    color: rgb(247, 238, 238);
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}
+/* End Input Subimt */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
